@@ -1,0 +1,4392 @@
+{
+	"info": {
+		"_postman_id": "83efc267-151d-4c47-bdc4-74a5f890adbf",
+		"name": "Flex-start",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28045472"
+	},
+	"item": [
+		{
+			"name": "dashboard",
+			"item": [
+				{
+					"name": "admin",
+					"item": [
+						{
+							"name": "projects",
+							"item": [
+								{
+									"name": "project images",
+									"item": [
+										{
+											"name": "get project images",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{host}}/api/project/5/image",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"project",
+														"5",
+														"image"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "project image store",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "image",
+															"type": "file",
+															"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM.jpeg"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{host}}/api/project/5/image/store",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"project",
+														"5",
+														"image",
+														"store"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "project image delete",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{host}}/api/project/image/1/delete",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"project",
+														"image",
+														"1",
+														"delete"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "project team",
+									"item": [
+										{
+											"name": "get project team",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{host}}/api/project/1/team",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"project",
+														"1",
+														"team"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "project member store",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "user_id",
+															"value": "1",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{host}}/api/project/1/team/store",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"project",
+														"1",
+														"team",
+														"store"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "project member delete",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{host}}/api/project/team/1/delete",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"project",
+														"team",
+														"1",
+														"delete"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "get projects",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{host}}/api/project/fares",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"project",
+												"fares"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "my projects",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/project/myProjects",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"project",
+												"myProjects"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "project store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "category_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "client_name",
+													"value": "fssfsd",
+													"type": "text"
+												},
+												{
+													"key": "price",
+													"value": "50000",
+													"type": "text"
+												},
+												{
+													"key": "date",
+													"value": "2023-02-28",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "mmmr",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "ldasjfljaljsdfljajfjasdfjajfsdl",
+													"type": "text"
+												},
+												{
+													"key": "link",
+													"value": "jlasdjfljjfsdjlfajsd",
+													"type": "text"
+												},
+												{
+													"key": "starts_at",
+													"value": "2023-02-28",
+													"type": "text"
+												},
+												{
+													"key": "ends_at",
+													"value": "2023-02-28",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/project/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"project",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "project update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "category_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "client_name",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "price",
+													"value": "50000",
+													"type": "text"
+												},
+												{
+													"key": "date",
+													"value": "2023-02-28",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "test project",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "ldasjfljaljsdfljajfjasdfjajfsdl",
+													"type": "text"
+												},
+												{
+													"key": "link",
+													"value": "jlasdjfljjfsdjlfajsd",
+													"type": "text"
+												},
+												{
+													"key": "starts_at",
+													"value": "2023-02-28",
+													"type": "text"
+												},
+												{
+													"key": "ends_at",
+													"value": "2023-02-28",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/project/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"project",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "project delete",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/project/3/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"project",
+												"3",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "project categories",
+							"item": [
+								{
+									"name": "get Project categories",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/projectCategory",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"projectCategory"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "project category store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/projectCategory/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"projectCategory",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "project category update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares test 1",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/projectCategory/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"projectCategory",
+												"1",
+												"update"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null,
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "project category delete",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/projectCategory/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"projectCategory",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "settings",
+							"item": [
+								{
+									"name": "get settings",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/setting",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"setting"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "setting store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "value",
+													"value": "test",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/setting/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"setting",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "setting update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/setting/1/update?name=fares&value=test",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"setting",
+												"1",
+												"update"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "fares"
+												},
+												{
+													"key": "value",
+													"value": "test"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "setting delete",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/setting/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"setting",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "services",
+							"item": [
+								{
+									"name": "get services",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/service",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"service"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "service store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM.jpeg"
+												},
+												{
+													"key": "description",
+													"value": "fldasjfjlajslfjlajsdlfjlasjdf",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/service/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"service",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "service update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "fares 1",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "fldasjfjlajslfjlajsdlfjlasjdf",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM.jpeg",
+													"disabled": true
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/service/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"service",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "service delete",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/service/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"service",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "questions",
+							"item": [
+								{
+									"name": "get questions",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/question",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"question"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "question store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "jfdsjalfj",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "flsajfjsdf",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/question/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"question",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "question update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "best programmer?",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/question/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"question",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "question delete",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/question/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"question",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Login",
+							"item": [
+								{
+									"name": "login",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "email",
+													"value": "test@test.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/login",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "logout",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/logout",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"logout"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "posts",
+							"item": [
+								{
+									"name": "post tags",
+									"item": [
+										{
+											"name": "get post tags",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{host}}/api/post/2/postTag",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"post",
+														"2",
+														"postTag"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "single tag store",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "tag",
+															"value": "6",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{host}}/api/post/2/postTag/store",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"post",
+														"2",
+														"postTag",
+														"store"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "post tag delete",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{host}}/api/post/postTag/20/delete",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"post",
+														"postTag",
+														"20",
+														"delete"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "get posts",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/post",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"post"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "my posts",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/post/myPosts",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"post",
+												"myPosts"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "post store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "test testsssssss",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "flakjsdfjjljkfas",
+													"type": "text"
+												},
+												{
+													"key": "category_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "user_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM.jpeg"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/post/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"post",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "post update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "flakjsdfjjljkfas",
+													"type": "text"
+												},
+												{
+													"key": "category_id",
+													"value": "3",
+													"type": "text"
+												},
+												{
+													"key": "user_id",
+													"value": "2",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM.jpeg"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/post/2/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"post",
+												"2",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "post delete",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/post/3/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"post",
+												"3",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "tags",
+							"item": [
+								{
+									"name": "get tags",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/tag",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"tag"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "tag store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "test tag",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/tag/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"tag",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "tag update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/tag/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"tag",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "tag delete",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/tag/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"tag",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "postCatgories",
+							"item": [
+								{
+									"name": "get postCategories",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/postCategory",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"postCategory"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "postCategory store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "electronics",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/postCategory/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"postCategory",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "postCategory update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "games",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/postCategory/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"postCategory",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "postCategory delete",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/postCategory/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"postCategory",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "plans",
+							"item": [
+								{
+									"name": "get plans",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/plan?",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"plan"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "plan store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "test plan description",
+													"type": "text"
+												},
+												{
+													"key": "price",
+													"value": "50000",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM.jpeg"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/plan/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"plan",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "test plan description",
+													"type": "text"
+												},
+												{
+													"key": "price",
+													"value": "50000",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": []
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/plan/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"plan",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/plan/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"plan",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "contacts",
+							"item": [
+								{
+									"name": "get contacts",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/contact",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"contact"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "contact store",
+									"request": {
+										"auth": {
+											"type": "bearer"
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "test@test.com",
+													"type": "text"
+												},
+												{
+													"key": "message",
+													"value": "hello from contact api",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/contact/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"contact",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "contact update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "test@test.com",
+													"type": "text"
+												},
+												{
+													"key": "message",
+													"value": "test test",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/contact/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"contact",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "contact delete",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/contact/3/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"contact",
+												"3",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "features",
+							"item": [
+								{
+									"name": "get features",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/feature",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"feature"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "feature store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/feature/store?name=fares",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"feature",
+												"store"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "fares"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "feature update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "testing",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/feature/2/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"feature",
+												"2",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "feature delete",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/feature/2/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"feature",
+												"2",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "clients",
+							"item": [
+								{
+									"name": "get clients",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/client",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"client"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "client store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM (3).jpeg"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/client/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"client",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "client update",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/client/1/update?name=test",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"client",
+												"1",
+												"update"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "test"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "client delete",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/client/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"client",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "users",
+							"item": [
+								{
+									"name": "profile",
+									"item": [
+										{
+											"name": "get my profile",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{host}}/api/profile",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"profile"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "profile update request",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "name",
+															"value": "fares elshinawy",
+															"type": "text"
+														},
+														{
+															"key": "email",
+															"value": "test@test.com",
+															"type": "text"
+														},
+														{
+															"key": "password",
+															"value": "123456",
+															"type": "text"
+														},
+														{
+															"key": "phone",
+															"value": "01100162900",
+															"type": "text"
+														},
+														{
+															"key": "birthdate",
+															"value": "2023-06-25",
+															"type": "text"
+														},
+														{
+															"key": "gender_id",
+															"value": "1",
+															"type": "text"
+														},
+														{
+															"key": "country_id",
+															"value": "1",
+															"type": "text"
+														},
+														{
+															"key": "department_id",
+															"value": "1",
+															"type": "text"
+														},
+														{
+															"key": "role",
+															"value": "admin",
+															"type": "text"
+														},
+														{
+															"key": "description",
+															"value": "fares elshinawy is a backend developer using php and laravel framework",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{host}}/api/profile/update",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"profile",
+														"update"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "get users",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/user",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"user"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "user search by phone name number",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/user/fares",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"fares"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "user store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares elshinawy",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "test@test.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "phone",
+													"value": "01100162900",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM.jpeg"
+												},
+												{
+													"key": "birthdate",
+													"value": "2023-06-25",
+													"type": "text"
+												},
+												{
+													"key": "gender_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "country_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "department_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "role",
+													"value": "admin",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "fares elshinawy is a backend developer using php and laravel framework",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/user/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "user update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares elshinay1",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "fares1@test.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "phone",
+													"value": "01100162900",
+													"type": "text"
+												},
+												{
+													"key": "birthdate",
+													"value": "2023-06-25",
+													"type": "text"
+												},
+												{
+													"key": "gender_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "country_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "department_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "role",
+													"value": "admin",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "fares elshinawy is a backend developer using php and laravel framework",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/user/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "user delete",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/user/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "departments",
+							"item": [
+								{
+									"name": "get departments",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/department",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"department"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "department store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "user",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/department/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"department",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "department update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "male",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/department/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"department",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "department delete",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/department/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"department",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "countries",
+							"item": [
+								{
+									"name": "get countries",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/country",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"country"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "country store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "egypt",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/country/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"country",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "country update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "test",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/country/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"country",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "country delete",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/country/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"country",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "genders",
+							"item": [
+								{
+									"name": "get genders",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/gender",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"gender"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "gender store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "male",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/gender/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"gender",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "gender update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "test",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/gender/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"gender",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "gender delete",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/gender/5/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"gender",
+												"5",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "statistics",
+							"item": [
+								{
+									"name": "New Request",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/statistics",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"statistics"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "feedbacks",
+							"item": [
+								{
+									"name": "get feedbacks",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/feedback",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"feedback"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null,
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "feedback store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "test",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "testestset",
+													"type": "text"
+												},
+												{
+													"key": "rate",
+													"value": "5",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/feedback/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"feedback",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "feedback delete",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/feedback/1/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"feedback",
+												"1",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "feedback update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "test feedback",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/feedback/1/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"feedback",
+												"1",
+												"update"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "employee",
+					"item": [
+						{
+							"name": "posts",
+							"item": [
+								{
+									"name": "post tags",
+									"item": [
+										{
+											"name": "get post tags",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{host}}/api/post/2/postTag",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"post",
+														"2",
+														"postTag"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "single tag store",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "tag",
+															"value": "6",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{host}}/api/post/2/postTag/store",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"post",
+														"2",
+														"postTag",
+														"store"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "post tag delete",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{host}}/api/post/postTag/20/delete",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"post",
+														"postTag",
+														"20",
+														"delete"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "tags",
+									"item": [
+										{
+											"name": "get tags",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{host}}/api/tag",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"tag"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "tag store",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "name",
+															"value": "test tag",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{host}}/api/tag/store",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"tag",
+														"store"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "tag update",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "name",
+															"value": "fares",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{host}}/api/tag/1/update",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"tag",
+														"1",
+														"update"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "tag delete",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{host}}/api/tag/1/delete",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"tag",
+														"1",
+														"delete"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "postCatgories",
+									"item": [
+										{
+											"name": "get postCategories",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{host}}/api/postCategory",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"postCategory"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "postCategory store",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "name",
+															"value": "electronics",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{host}}/api/postCategory/store",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"postCategory",
+														"store"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "postCategory update",
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "name",
+															"value": "games",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{host}}/api/postCategory/1/update",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"postCategory",
+														"1",
+														"update"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "postCategory delete",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{host}}/api/postCategory/1/delete",
+													"host": [
+														"{{host}}"
+													],
+													"path": [
+														"api",
+														"postCategory",
+														"1",
+														"delete"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "my posts",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/post/myPosts",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"post",
+												"myPosts"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "post store",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "test testsssssss",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "flakjsdfjjljkfas",
+													"type": "text"
+												},
+												{
+													"key": "category_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "user_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM.jpeg"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/post/store",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"post",
+												"store"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "post update",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "fares",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "flakjsdfjjljkfas",
+													"type": "text"
+												},
+												{
+													"key": "category_id",
+													"value": "3",
+													"type": "text"
+												},
+												{
+													"key": "user_id",
+													"value": "2",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"type": "file",
+													"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM.jpeg"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/post/2/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"post",
+												"2",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "post delete",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/post/3/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"post",
+												"3",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "projects",
+							"item": [
+								{
+									"name": "my projects",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/api/project/myProjects",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"project",
+												"myProjects"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "profile Copy",
+							"item": [
+								{
+									"name": "get my profile",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/profile",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"profile"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "profile update request",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares elshinawy",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "test@test.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "phone",
+													"value": "01100162900",
+													"type": "text"
+												},
+												{
+													"key": "birthdate",
+													"value": "2023-06-25",
+													"type": "text"
+												},
+												{
+													"key": "gender_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "country_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "department_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "role",
+													"value": "admin",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "fares elshinawy is a backend developer using php and laravel framework",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/profile/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"profile",
+												"update"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "EndUser",
+			"item": [
+				{
+					"name": "projects",
+					"item": [
+						{
+							"name": "project images",
+							"item": [
+								{
+									"name": "get project images",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/EndUser/project/1/image",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"EndUser",
+												"project",
+												"1",
+												"image"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "get projects",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{host}}/api/EndUser/project",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"project"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "test@test.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/login",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/logout",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "plans",
+					"item": [
+						{
+							"name": "get plans",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/EndUser/plan?",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"plan"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "features",
+					"item": [
+						{
+							"name": "get features",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/EndUser/feature",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"feature"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "contacts",
+					"item": [
+						{
+							"name": "contact store",
+							"request": {
+								"auth": {
+									"type": "bearer"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "fares",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "test@test.com",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "hello from contact api",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/EndUser/contact/store",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"contact",
+										"store"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "clients",
+					"item": [
+						{
+							"name": "get clients",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/EndUser/client",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"client"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "genders",
+					"item": [
+						{
+							"name": "get genders",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/EndUser/gender",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"gender"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "feedbacks",
+					"item": [
+						{
+							"name": "get feedbacks",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/EndUser/feedback",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"feedback"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "feedback store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "testestset",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/EndUser/feedback/store",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"feedback",
+										"store"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "questions",
+					"item": [
+						{
+							"name": "get questions",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/EndUser/question",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"question"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "profile",
+							"item": [
+								{
+									"name": "get my profile",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{host}}/api/EndUser/profile",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"EndUser",
+												"profile"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "profile update request",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "fares elshinawy",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "test@test.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "phone",
+													"value": "01100162900",
+													"type": "text"
+												},
+												{
+													"key": "birthdate",
+													"value": "2023-06-25",
+													"type": "text"
+												},
+												{
+													"key": "gender_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "country_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "department_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "role",
+													"value": "admin",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "fares elshinawy is a backend developer using php and laravel framework",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/api/EndUser/profile/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"api",
+												"EndUser",
+												"profile",
+												"update"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "user store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "fares elshinawy",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "test@test.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01100162900",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/D:/Pictures/WhatsApp Image 2023-03-15 at 1.41.49 PM.jpeg"
+										},
+										{
+											"key": "birthdate",
+											"value": "2023-06-25",
+											"type": "text"
+										},
+										{
+											"key": "gender_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "country_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "department_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "admin",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "fares elshinawy is a backend developer using php and laravel framework",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/EndUser/user/store",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"user",
+										"store"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "fares elshinay1",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "fares1@test.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "01100162900",
+											"type": "text"
+										},
+										{
+											"key": "birthdate",
+											"value": "2023-06-25",
+											"type": "text"
+										},
+										{
+											"key": "gender_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "country_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "department_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "admin",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "fares elshinawy is a backend developer using php and laravel framework",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/api/EndUser/user/1/update",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"user",
+										"1",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user delete",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/EndUser/user/1/delete",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"user",
+										"1",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "posts",
+					"item": [
+						{
+							"name": "get posts",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{host}}/api/EndUser/post",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"EndUser",
+										"post"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://127.0.0.1:8000"
+		}
+	]
+}
