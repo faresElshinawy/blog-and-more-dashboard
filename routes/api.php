@@ -20,6 +20,7 @@ use App\Http\Controllers\Api\SettingController;
 use App\Http\Controllers\Api\FeedbackController;
 use App\Http\Controllers\Api\QuestionController;
 use App\Http\Controllers\Api\DepartmentController;
+use App\Http\Controllers\Api\EmailController;
 use App\Http\Controllers\Api\StatisticsController;
 use App\Http\Controllers\Api\ProjectTeamController;
 use App\Http\Controllers\Api\PostCategoryController;
@@ -267,4 +268,6 @@ Route::prefix('EndUser')->group(function () {
     });
 
 });
+
+Route::get('send-email',[EmailController::class,'send'])->middleware(['auth:sanctum','ApiLoged']);
 

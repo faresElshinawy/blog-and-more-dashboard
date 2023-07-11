@@ -225,12 +225,12 @@ Route::group(['middleware'=>'prevent-back-history'],function(){
         });
     });
 
-    Route::as('site.')->group(function(){
+    // Route::as('site.')->group(function(){
 
-        Route::controller(HomeController::class)->group(function(){
-            Route::get('','index')->name('home');
-        });
+    //     Route::controller(HomeController::class)->group(function(){
+    //         Route::get('','index')->name('home');
+    //     });
 
-    });
+    // });
 });
 
