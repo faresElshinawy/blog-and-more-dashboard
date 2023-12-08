@@ -11,7 +11,7 @@ class QuestionRepository implements QuestionRepositoryInterface {
     {
         if($paginate)
         {
-            return Question::painate(10);
+            return Question::paginate(10);
         }
         return Question::get();
     }

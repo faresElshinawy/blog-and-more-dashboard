@@ -271,3 +271,5 @@ Route::prefix('EndUser')->group(function () {
 
 Route::get('send-email',[EmailController::class,'send'])->middleware(['auth:sanctum','ApiLoged']);
 
+
+
